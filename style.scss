@@ -55,9 +55,86 @@ body {
 
 .content {
     display: grid;
-    >.column {
-        >.tile {
-            border: 1px solid black
+    width: 40%;
+    margin: auto;
+    >.tile {
+        border: 1px solid $tile-button-border;
+        display: inline-grid;
+        column-gap: 1rem;
+        row-gap: 1rem;
+        margin: 0.5rem;
+        background-color: white;
+        border-radius: 20px;
+        width: 12rem;
+        height: 12rem;
+        >img {
+            margin: 1rem auto;
         }
+        >.text{
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+    }
+
+    >.tile:hover{
+        border: 1px solid $hover-tile-bg-and-button-bg;
+        cursor: pointer;
+    }
+
+    >#one {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    >#two {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    >#three {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    >#four {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    >#five {
+        grid-column: 2;
+        grid-row: 3;
+    }
+    
+    >#six {
+        grid-column: 3;
+        grid-row: 1;
+    }
+    >#seven {
+        grid-column: 3;
+        grid-row: 2;
+    }
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    
+
+    >button {
+        font-weight: 600;
+        padding: 10px;
+    }
+
+    >.start {
+        background-color: $hover-tile-bg-and-button-bg;
+        border: none;
+        border-radius: 10px;
+        color: white;
+    }
+    >.npm {
+        background-color: $body-bg-color;
+        border: 1px solid $tile-button-border;
+        border-radius: 10px;
     }
 }

@@ -48,7 +48,78 @@ body {
 
 .content {
   display: grid;
+  width: 40%;
+  margin: auto;
 }
-.content > .column > .tile {
-  border: 1px solid black;
+.content > .tile {
+  border: 1px solid #c7e0ff;
+  display: inline-grid;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  row-gap: 1rem;
+  margin: 0.5rem;
+  background-color: white;
+  border-radius: 20px;
+  width: 12rem;
+  height: 12rem;
+}
+.content > .tile > img {
+  margin: 1rem auto;
+}
+.content > .tile > .text {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.content > .tile:hover {
+  border: 1px solid #1876d1;
+  cursor: pointer;
+}
+.content > #one {
+  grid-column: 1;
+  grid-row: 1;
+}
+.content > #two {
+  grid-column: 1;
+  grid-row: 2;
+}
+.content > #three {
+  grid-column: 2;
+  grid-row: 1;
+}
+.content > #four {
+  grid-column: 2;
+  grid-row: 2;
+}
+.content > #five {
+  grid-column: 2;
+  grid-row: 3;
+}
+.content > #six {
+  grid-column: 3;
+  grid-row: 1;
+}
+.content > #seven {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.bottom {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.bottom > button {
+  font-weight: 600;
+  padding: 10px;
+}
+.bottom > .start {
+  background-color: #1876d1;
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
+.bottom > .npm {
+  background-color: #edf5ff;
+  border: 1px solid #c7e0ff;
+  border-radius: 10px;
 }/*# sourceMappingURL=style.css.map */
